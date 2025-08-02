@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgb(230, 230, 230);
+  font-family: "Inter", sans-serif;
+}
+
+.searchbox {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#main {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow-y: auto; */
+  height: auto;
+  gap: 2vh;
+  padding-bottom: 5vh;
+}
+
+.searchbar {
+  display: flex;
+}
+
+#search {
+  font-family: "Nunito", sans-serif;
+}
+
+.searchbar input {
+  width: 60vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  background-color: rgb(204, 200, 200);
+}
+
+.searchbar button {
+  width: 10vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  position: relative;
+  right: 10vw;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.recipes {
+  flex: 0 0 auto;
+  min-height: 42vh;
+  height: 42vh;
+  width: 90vw;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  scrollbar-width: thin;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.food_image {
+  height: 42vh;
+  width: 25vw;
+  position: relative;
+}
+
+.food_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food_content {
+  width: 65vw;
+  font-family: "Inter", sans-serif;
+  padding: 1vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: black;
+}
+
+.food_content h1 {
+  font-size: 1.3em;
+  color: rgb(0, 0, 0);
+}
+
+.content_new {
+  font-family: "Inter", sans-serif;
+  padding: 1vw;
+  font-size: 1.2em;
+  color: black;
+  width: 60vw;
+  overflow-x: hidden;
+}
+.brand_name{
+  height: 10vh;
+}
+.navigation{
+  height: 10vh;
+}
+header{
+  height: 60vh;
+}
+.content_2{
+    position: relative;
+    right: -56vw;
+    width: 40vw;
+    top: 3vh;
+}
+.content_2 button{
+  position: relative;
+  top:5vh;
+  padding:0.5vw;
+  color: black;
+  border-radius: 0.7vw;
+  border: none;
+}
+@media (max-width: 768px) {
+  .extend{
+    display: block;
+  }
+  .searchbox {
+    margin-top: 15vh;
+    width: 100vw;
+  }
+header{
+  height: 10vh;
+}
+.extend{
+   position: relative;
+  z-index: 10;
+}
+  .searchbar {
+    position: relative;
+    top:1vh;
+    margin: auto;
+    width: 100%;
+    height: 13vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+  }
+.searchbar input{
+  width: 95%;
+  position: relative;
+  left: 5vw;
+  margin: auto;
+    z-index: 2;
+}
+  #search {
+    width: 95vw;
+    font-size: large;
+  }
+
+  .searchbar button {
+    width: 20%;
+    position: relative;
+    right: 3vw;
+    z-index: 4;
+  }
+  .extend{
+    position: absolute;
+  }
+
+  .recipes {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .food_image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .food_image img {
+    width: 80%;
+    height: auto;
+  }
+
+  #main {
+    margin-top: 10vh;
+    max-height: none;
+  }
+
+  .food_content {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .content_new {
+    width: 80vw;
+    
+  }
+.content_2 p,.content_2 button{
+display: none;
+}
+.content_2 h1{
+  text-align: center;
+}
+.content_2{
+  width: 100%;
+  position: static;
+  background-color: black;
+  height: 10vh;
+  align-items: center;
+}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .recipes {
+    flex-wrap: wrap;
+  }
+
+  .food_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  .food_image img {
+    width: 60%;
+  }
+}

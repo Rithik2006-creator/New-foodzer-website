@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url('https://images.pexels.com/photos/10749578/pexels-photo-10749578.jpeg');
+    
+}
+main{
+    font-family: "Oswald", sans-serif;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    align-items: center;
+}
+main h1{
+    text-align: center;
+}
+.foods{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+body{
+     /* background-image: url('bg\ image.jpg'); */
+    background-size: cover;
+}
+/* 1️⃣   Let .cart scroll only on the y‑axis */
+.cart{
+    margin: auto;
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;     /* <- change */
+    overflow-x: hidden;   /* optional */
+    scrollbar-width: thin;
+}
+
+/* 2️⃣   Stop the children from shrinking */
+.items{
+    flex: 0 0 30%;        /* flex‑grow 0, flex‑shrink 0, flex‑basis 20% */
+    /* OR just add flex-shrink: 0; if you prefer */
+    width: 100%;
+    border-radius: 10px;
+    background: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* .cart{
+    margin: auto;
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    /* overflow-x: hidden; */
+    /* scrollbar-width: thin; */
+    /* border: 2px solid black; */
+
+.items{
+   width: 100%;
+   height: 20%;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+} */
+.image{
+    height: 100%;
+    width: 20%;
+}
+img{
+    height: 100%;
+    width: 25%;
+    border-radius: 10px;
+    position: relative;
+}
+.btn-close{
+    margin-right: 10px;
+}
+.confirm{
+    width: 50%;
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-around;
+}
+#btn{
+    width: 100px;
+    border: none;
+    padding: 0.75vw;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+
+}
+.food_items{
+    position: relative;
+    /* position: absolute; */
+    margin: auto;
+    height: 70vh;
+    margin-top: 4vh;
+    scrollbar-width: thin;
+    width: 80vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 2vw;
+    padding: 2vw;
+    display: flex;
+    gap: 16px;
+    /* background-color: rgb(212, 230, 255); */
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    z-index: 1;
+
+}
+
+.item_box{
+    width: 50vw;
+    height: 20vh;
+    border-radius: 2vw;
+    display: flex;
+    /* justify-content: ; */
+    overflow: hidden;
+    flex: 0 0 auto; 
+    align-items: center;
+    background-color: white;
+}
+.item_image{
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+.item_image img{
+    width: 100%;
+}
+.item_content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+#total_price{
+    border: none;
+    border-radius: 1vw;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar2{
+        position: relative;
+        bottom: 1vh;
+
+    }
+    .extend{
+position: relative;
+        bottom: 1vh;
+    }
+    .cart{
+        margin-top: 2vh;
+        width: 95%;
+    }
+    img{
+        width: 22%;
+    }
+    .confirm{
+
+        width: 90vw;
+        margin-bottom: 3vh;
+
+    }
+    .food_items{
+        /* height: auto; */
+        width: 95vw;
+
+    }
+    .item_content{
+        font-size: smaller;
+        width: 80%;
+    }
+    .item_content h6{
+        color: black;
+        font-size: smaller;
+    }
+   
+    .item_box{
+        width: 97%;
+        height: 15%;
+    }
+    #btn{
+        width: 30vw;
+    }
+    .navbar{
+       visibility: hidden;
+       height: 0vh;
+    }
+}

@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    background-image: url('https://images.pexels.com/photos/10749578/pexels-photo-10749578.jpeg');
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-color:rgb(230, 230, 230) ;
+    height: 100vh;
+}
+.navbar{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    width: 70vw;
+}
+.navigation ul {
+    width: 70vw;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation ul{
+    display:flex;
+
+}
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navigation ul li a:hover{
+    color: rgb(255, 230, 0);
+    text-decoration: none;
+}
+.brand_name{
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    left:2vw;
+    font-family: "Inter", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+.content{
+    width: 40vw;
+    height: 60vh;
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 20px;
+    font-family: "Inter", sans-serif;
+    word-spacing: 0.2vw;
+    /* font-weight: ; */
+    /* font-size: small; */
+  
+}
+.content h1{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+}
+.content button{
+    position: relative;
+    top:5vh;
+    background-color: white;
+    color: black;
+    font-family: "Inter", sans-serif;
+    padding: 0.4vw;
+border-radius: 0.5vw;
+font-weight: bolder;
+border: none;
+}
+.content button:hover{
+    background-color: yellow;
+}
+#category{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.category_header{
+    width: 100%;
+    
+}
+.category_header h1{
+    /* margin-top: 2vh; */
+    color: black;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+       position: relative;
+    top:2vh;
+}
+.category_cards{
+    position: relative;
+    top:4vh;
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1vw;
+}
+.card_box{
+    height: 80%;
+    width: 22%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1vw;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.card_image{
+    height: 50%;
+    background-color: white;
+}
+.card_image img{
+    width: 100%;
+    height: 100%;
+}
+.card_box:hover {
+  transform: scale(1.05);
+}
+
+.card_box:hover img {
+  transform: scale(1.1);
+}
+
+.details{
+    height: 50%;
+    font-family: "Inter", sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.details h3,.details p{
+    position: relative;
+    left:1vw;
+    /* text-align: center; */
+    color: black;
+}
+#special_order{
+    padding: 0.5vw;
+    /* position: relative;
+    left:1vw; */
+    color: rgb(255, 255, 255);
+    border-radius: 0.5vw;
+    border: none;
+    background-color: red;
+    top: 5vw;
+}
+.inner_content{
+    margin-top: 4vh;
+    height: 30%;
+}
+.box_category1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 2vw;
+  width: 90%;
+  margin: auto;
+  padding: 2vh 0;
+  background-color: white;
+  border-radius: 1vw;
+}
+
+
+.items {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: ;
+}
+
+.items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.items img:hover {
+  transform: scale(1.1);
+}
+
+.category_header h1 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+/* @media (max-width: 768px) {
+  .box_category1 {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+  }
+  header{
+    overflow: hidden;
+    height: auto;
+    z-index: 10;
+  }
+  #category1{
+    height: 60vh;
+  }
+  #category{
+    height: auto;
+     margin-top: 2vh;
+  }
+  .category_cards{
+   
+   display: flex;
+   /* flex-direction: column; */
+   /* overflow-x: scroll;
+   height: auto;
+  }
+  .card_box{
+    width: 30%;
+    height: 22vh;
+  }
+  .card_box img{
+    width: 100%;
+    height: 100%;
+  }
+} */
+/* footer{
+    width: 100%;
+    height: 10vh;
+    background-color:black ;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+} */ 
+/* @media (max-width: 768px) {
+    .content{
+        width: 90%;
+        margin: 3vw;
+        position: sticky;
+        
+    }
+    .content h1{
+        font-size: larger;
+    }
+    .details{
+        font-size: 2vw;
+        height: 50%;
+    }
+    .category_header h1{
+        font-size: small;
+        margin-bottom: 3vh;
+        margin-top: 5vh;
+    }
+    .inner_content{
+        margin-top: 1vh;
+    }
+} */
+@media (max-width: 768px) {
+    .content{
+        width: 85%;
+        padding-left: 2vw;
+        height: 80%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+        text-shadow: 5px 5px 5px black;
+    }
+    .content h1{
+        font-size: larger;
+    }
+    header{
+        filter: brightness(80%) grayscale(20%) contrast(120%);
+        z-index: 2;
+        height: 52vh;
+
+    }
+    .box_category1{
+        z-index: 10;
+        padding: 1vw;
+    }
+    .category_cards{
+         width: 98vw;
+        height: 40vh;
+        /* width: 30vw; */
+    }
+    .card_box{
+        width: 31vw;
+        height: 30vh;
+    }
+    .inner_content h3,.inner_content p{
+        font-size: 3vw;
+    }
+    #category{
+        width: 98vw;
+        height: 50vh;
+        z-index: 10;
+    }
+    .category_header h1{
+        font-size: 5vw;
+    }
+    footer{
+        height: 10vh;
+        background-color: black;
+    }
+    .content h1{
+        margin-top: 4vh;
+        text-align: center;
+        font-size: 11vw;
+        letter-spacing: 2vw;
+    }
+    .content p{
+        display: none;
+    }
+    .content button{
+        padding: 2vw;
+    }
+    .content button:hover{
+        background-color: ye;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="navbar_new.css">
+    <link rel="stylesheet" href="navbar2.css">
+    <link rel="stylesheet" href="menu.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu</title>
+     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <header style="height: 10vh;">
+      <div class="navbar">
+        <div class="brand_name" style="height: 10vh;display: flex;">
+          <h1>Foodzer</h1>
+        </div>
+        <div class="navigation">
+          <ul style="height: 10vh;display: flex;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="receipe.html">Recipe</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="">Contact</a></li>
+            <!-- <li><a href=""></a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="navbar2">
+        <div class="brand_logo"><h1>Foodzer</h1></div>
+<div class="btn_extend" id="btn_extend">
+    <button style="background-color: rgb(255, 255, 255);"><i class="fa-solid fa-bars" style="background-color: rgb(255, 255, 255);color: rgb(0, 0, 0);"></i></button>
+</div>
+   </div> 
+    <div class="extend" id="increase">
+        <ul id="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="receipe.html">Recipe</a></li>
+            
+        </ul>
+        <div class="btn_cred" id="btn_cred"><button id="bill">Cart</button>
+            <button id="phone">Contact</button></div>
+        
+    </div>
+      <!-- <div class="content">
+        <h1>Welcome to Recipes</h1>
+        <p style="font-size: 1.3vw;">
+         your flavorful destination for delicious discoveries! Whether you’re a seasoned chef or just stepping into the kitchen, Foodzer is here to stir up inspiration and satisfy every craving. We believe cooking should be joyful, creative, and accessible — which is why we bring you recipes that blend tradition, innovation, and pure yumminess. From comforting classics to bold new bites, there’s something for every taste and occasion. So grab your apron, fire up your curiosity, and let’s cook up some magic! 🍳✨
+        </p>
+        <button>Order Now</button>
+      </div> -->
+       
+    </header>
+    <main>
+    <div class="searchbox">
+      <!-- <div class="message"><h1>Want to cook for yourself ?</h1>
+    But not sure how to cook
+    Don't worry Foodzer provides the top <br>
+    Delicious recipes so that you can cook for you and for your loved ones....
+    </div> -->
+    <div class="searchbar">
+        <input type="text" placeholder="Search for any food" id="search" value="Chicken">
+        <button onclick="send_data()" id="btn2"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div>  
+  <div class="menu" id="card_boxer">
+   
+   
+  </div>
+    </main>
+    <script src="menu.js"></script>
+     <script src="nav.js"></script>
+    <!-- <footer></footer> -->
+  </body>
+</html>

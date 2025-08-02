@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  background-color: azure;
+}
+
+/* Flex layout for body and main */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 2vw;
+}
+
+.searchbox {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+    /* width: 100%; */
+  display: flex;
+}
+
+.searchbar input {
+  width: 60vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(204, 200, 200);
+}
+
+.searchbar button {
+  width: 10vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  position: relative;
+  right: 10vw;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.inc_dec {
+  width: 7vw;
+  /* margin: 1vw; */
+  margin-left: 1vw;
+  visibility: v;
+}
+.foods_card {
+  width: 20vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 2vw;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px black;
+  font-family: "Inter", sans-serif;
+}
+
+.foods_card:hover {
+  box-shadow: 1px 1px 15px black;
+  transform: scaleY(1.02);
+}
+.foods_card:hover .imagen img{
+  box-shadow: 1px 1px 15px;
+  transform: scale(1.05);
+}
+
+.imagen {
+  width: 100%;
+  height: 55%;
+  background-color: red;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.contentn {
+  margin: 1vw;
+  font-size: 0.9em;
+    font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+  color: black;
+}
+
+.contentn button {
+  width: 5vw;
+  padding: 0.5vw;
+  border-radius: 20px;
+  background-color: rgb(255, 3, 3);
+  color: white;
+  border: none;
+  margin-top: 1vw;
+}
+.contentn h3{
+  color: rgb(0, 0, 0);
+}
+
+.contentn button:hover {
+  background-color: rgb(9, 255, 0);
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inc_dec{
+  display: none;
+}
+.menu {
+  /* position: absolute; */
+  flex: 1;
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1vw;
+  overflow-y: auto;
+  row-gap: 2vh;
+  scrollbar-width: thin;
+  height: 100vh;
+}
+
+/* Cart section */
+#cart {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  
+  .searchbar {
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    /* align-items: center; */
+    height: auto;
+  }
+
+  .searchbar input {
+    width: 95%;
+    height:5vh;
+    margin-bottom: 1vh;
+  }
+
+  .menu {
+    margin-top: 1vh;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foods_card {
+    width: 46.5vw;
+    height: 40vh;
+    margin-left: 1vw;
+  }
+
+  .contentn button {
+    width: 20vw;
+    height: 4vh;
+  }
+
+  .contentn {
+    font-size: 13px;
+  }
+  .searchbar button{
+      position: absolute;
+    width: 20vw;
+    height:5vh;
+    right: 2vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .contentn {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.navbar2{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid rgb(204, 204, 204); */
+    overflow: hidden;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+.brand_logo{
+    width: 40%;
+}
+.brand_logo h1{
+    /* font-family: "Nunito", sans-serif; */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+      font-family: "Inter", sans-serif;
+}
+.brand_logo img{
+    width: 100%;
+}
+.btn_extend{
+    position: relative;
+    left:20%;
+}
+.btn_extend button{
+    padding: 2vw;
+    border: none;
+    font-size: x-large;
+}
+.extend{
+   
+    width: 100%;
+    height: 0vh;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 1s all;
+    background-color: rgb(0, 0, 0);
+     display: none;
+     z-index: 2;
+     
+}
+.extend ul{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+     font-family: "Nunito", sans-serif;
+    align-items: center;
+}
+
+#ul{
+    visibility:hidden;
+}
+#btn_cred{
+    visibility: hidden;
+}
+.extend ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* font-family: "Winky Rough", sans-serif; */
+      font-family: "Inter", sans-serif;
+}
+.btn_cred{
+
+    justify-content: space-around;
+       display: none;
+}
+.btn_cred button{
+    /* font-family: "Winky Rough", sans-serif; */
+      font-family: "Inter", sans-serif;
+    border: none;
+    width: 20%;
+    padding: 2vw;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    .navbar{
+        display: none;
+        visibility: hidden;
+    }
+    .navbar2{
+        
+        display: flex;
+    }
+    .extend{
+        position: relative;
+        display: flex;
+        z-index: 10;
+    }
+    .btn_cred{
+        display: flex;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+      .navbar2{
+        
+        display: flex;
+    }
+    .extend{
+        display: flex;
+    }
+    .btn_cred{
+        display: flex;
+    }
+}
